@@ -146,4 +146,3 @@ plot <- ggplot(steps_interval_dayType, aes(interval, mean_steps))
 plot + geom_line(color = "tan3") + facet_grid(day_type~.) + labs(x = "Intervals", y = "Average Steps", title = "Activity Patterns")
 ```
 
-knit2html(PA1_template.Rmd)
