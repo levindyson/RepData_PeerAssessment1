@@ -1,8 +1,10 @@
 ---
-title: "PA1_template.Rmd"
+title: "PA1_template.md"
 author: "Levin Dyson"
 date: "July 21, 2019"
-output: html_document
+output:
+  html_document: default
+  pdf_document: default
 ---
 
 
@@ -143,3 +145,5 @@ library(ggplot2)
 plot <- ggplot(steps_interval_dayType, aes(interval, mean_steps))
 plot + geom_line(color = "tan3") + facet_grid(day_type~.) + labs(x = "Intervals", y = "Average Steps", title = "Activity Patterns")
 ```
+
+knit2html(PA1_template.Rmd)
